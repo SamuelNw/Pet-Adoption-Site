@@ -6,7 +6,7 @@ const fetchPet = async ({ queryKey }) => {
 		throw new Error(`details/${id} fetch is not ok`);
 	}
 
-	return apiRes;
+	return apiRes.json();
 };
 
 export default fetchPet;
